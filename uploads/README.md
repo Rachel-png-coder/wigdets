@@ -1,16 +1,27 @@
-# divider
+# Two Column CV Flutter Widget
 
-A new Flutter project.
+This project demonstrates a simple Flutter widget that displays a CV layout using two columns.
 
-## Getting Started
+## Description
+The widget uses Flutter layout components such as Row, Column, Expanded, and Divider to organize profile information, skills, education, and experience into a clean two-column interface.
 
-This project is a starting point for a Flutter application.
+## How to Run
+1. Clone the repository
+2. Navigate into the project folder
+3. Run the following command:
 
-A few resources to get you started if this is your first Flutter project:
+flutter pub get
+flutter run
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Key Attributes Used
+1. **crossAxisAlignment**
+   - Aligns widgets horizontally inside a Column or vertically inside a Row.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+2. **Expanded**
+   - Allows a widget to take up available space inside a Row or Column.
+
+3. **SizedBox**
+   - Adds spacing between widgets.
+
+## Screenshot
+(![CV UI](assets/images/cv_ui.png))
