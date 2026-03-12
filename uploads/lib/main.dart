@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
+  // Entry point of the Flutter app
   runApp(const MyApp());
 }
 
@@ -9,9 +10,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+     // MaterialApp is the root widget of the app
     return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: TwoColumnCV(),
+      debugShowCheckedModeBanner: false, // Removes the debug banner
+      home: TwoColumnCV(), // Sets the main screen widget
     );
   }
 }
@@ -22,7 +24,9 @@ class TwoColumnCV extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // Scaffold provides basic visual layout structure
       body: SingleChildScrollView(
+        // Makes the page scrollable in case content overflows
         child: Padding(
           padding: const EdgeInsets.all(20),
           child: Row(
@@ -30,6 +34,7 @@ class TwoColumnCV extends StatelessWidget {
             children: [
               // LEFT COLUMN
               Expanded(
+                // Expanded ensures the column takes up half the horizontal space
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: const [
@@ -40,12 +45,12 @@ class TwoColumnCV extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    SizedBox(height: 10),
+                    SizedBox(height: 10), // Space between title and text
                     Text("Name: Rachel Toronga"),
                     Text("Mobile Developer"),
 
                     SizedBox(height: 20),
-                    Divider(thickness: 5, color: Colors.blue),
+                    Divider(thickness: 5, color: Colors.blue), // Horizontal line
 
                     SizedBox(height: 20),
 
@@ -64,6 +69,7 @@ class TwoColumnCV extends StatelessWidget {
                 ),
               ),
 
+               // Vertical divider between left and right columns
               const VerticalDivider(thickness: 5, width: 40),
 
               // RIGHT COLUMN
