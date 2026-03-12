@@ -24,4 +24,4 @@ flutter run
    - Adds spacing between widgets.
 
 ## Screenshot
-(![CV UI](assets/images/cv_ui.png))
+<img width="356" height="502" alt="cv_ui" src="https://github.com/user-attachments/assets/bcce5d6f-4914-4e7a-9267-12ddd3787b21" />
